@@ -19,10 +19,12 @@
     
     
     <LinearLayout
+        android:id="@+id/layout1"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="6dp"
+        android:visibility="visible"
         >
         <ImageView
             android:id="@+id/iv_imagedog"
@@ -64,7 +66,28 @@
             ></TextView>
     </LinearLayout>
 
-
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:textSize="25dp"
+            android:text="@{dog.name}"
+            android:layout_marginTop="10dp"
+            ></TextView>
+        <TextView
+            android:text="@{dog.origin}"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:textSize="18dp"
+            ></TextView>
+    </LinearLayout>
 
 
 
